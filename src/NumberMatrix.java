@@ -17,6 +17,13 @@ public class NumberMatrix {
 	 */	
 	public void shiftMatrix(int num)
 	{ /* to be implemented in part (b) */ 
+		int tempNum;
+		
+		for(int row=0; row<=matrix[row].length-1; row++) {
+			tempNum =  matrix[row][matrix.length-1];
+			ArrayUtil.shiftArray(matrix[row], num);
+			num = tempNum;
+		}
 		
 		
 		

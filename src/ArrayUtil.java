@@ -12,7 +12,14 @@ public class ArrayUtil {
 	*/
 	public static void shiftArray(int[] arr, int num) 
 	{ /* to be implemented in part (a) */ 
-			
+			for(int i=arr.length-1; i>=0; i--) {
+				if(i==0) {
+					arr[0] = num;
+				}
+				else {
+				arr[i] = arr[i-1];
+				}
+			}
 	}
 	
 	// There may be methods that are not shown.
