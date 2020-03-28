@@ -26,7 +26,6 @@ public class NumberMatrix {
 		}
 		
 		
-		
 	}
 	
 	/**Rotates each matrix element to the next higher position in row-major 
@@ -37,7 +36,9 @@ public class NumberMatrix {
 	 */
 	public void rotateMatrix()
 	{ /* to be implemented in part (c) */ 
-		
+		int num = matrix[matrix.length-1][matrix.length-1];
+			
+		shiftMatrix(num);
 	}
 	
 	// There may be instance variables, constructors, and methods that are not
